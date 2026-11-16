@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deploy-tool"
+version = "0.1.0"
+description = "CLI tool to deploy Python scripts, shell scripts, and binaries to user PATH as global commands."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "NonLaHu" }
+]
+keywords = ["cli", "deployment", "symlink", "bin", "path", "developer-tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/NonLaHu/deploy_tool"
+Repository = "https://github.com/NonLaHu/deploy_tool.git"
+
+[project.scripts]
+deploy-tool = "deploy_tool.cli:main"
